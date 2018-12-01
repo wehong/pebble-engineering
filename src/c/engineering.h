@@ -1,7 +1,7 @@
 #pragma once
 #include <pebble.h>
 	
-#define KEY_TEMPERATURE 0
+/*#define KEY_TEMPERATURE 0
 #define KEY_SHOW_NUMBERS 1
 #define KEY_SHOW_SECOND_HAND 2
 #define KEY_SHOW_DATE 3
@@ -13,6 +13,7 @@
 #define KEY_COLOR_HOUR_HAND 9
 #define KEY_COLOR_MINUTE_HAND 10
 #define KEY_COLOR_SECOND_HAND 11
+#define KEY_SHOW_DIGITTIME 12*/
 
 #define INSET PBL_IF_ROUND_ELSE(1, 0)
 #define HOURS_RADIUS 3
@@ -20,31 +21,62 @@
 char *uppercase(char *str);
 
 #ifdef PBL_RECT
-static const GPathInfo MINUTE_HAND_POINTS = {
+/*static const GPathInfo MINUTE_HAND_POINTS = {
   9,
   (GPoint []) {
 	{ -2, 0},
 	{ 2, 0 },
 	{ 2, -20 },
-	{ 4, -20 },
+//{ 4, -20 },
+  { 4, -24},
     { 4, -60 },
 	{ 0, -64 },
 	{ -4, -60 },
-	{ -4, -20 },
+//{ -4, -20 },
+  { -4, -24 },
 	{ -2, -20 }
   }
+};*/
+static const GPathInfo MINUTE_HAND_POINTS = {
+  9,
+  (GPoint []) {
+	{ -2, 0},
+	{ 2, 0 },
+	{ 2, -16 },
+  { 4, -20},
+    { 4, -60 },
+	{ 0, -64 },
+	{ -4, -60 },
+  { -4, -20 },
+	{ -2, -16 }
+  }
 };
-static const GPathInfo HOUR_HAND_POINTS = {
+/*static const GPathInfo HOUR_HAND_POINTS = {
   9, (GPoint []){
     { -2, 0 },
 	{ 2, 0 },
 	{ 2, -15 },
-	{ 4, -15 },
+	//{ 4, -15 },
+  { 4, -19 },
     { 4, -44 },
 	{ 0, -48 },
 	{ -4, -44 },
-	{ -4, -15 },
+	//{ -4, -15 },
+  { -4, -19 },
 	{ -2, -15 }
+  }
+};*/
+static const GPathInfo HOUR_HAND_POINTS = {
+  9, (GPoint []){
+    { -2, 0 },
+	{ 2, 0 },
+	{ 2, -9 },
+  { 4, -13 },
+  { 4, -44 },
+	{ 0, -48 },
+	{ -4, -44 },
+  { -4, -13 },
+	{ -2, -9 }
   }
 };
 #else

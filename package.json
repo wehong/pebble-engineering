@@ -1,0 +1,51 @@
+{
+    "author": "wehong - original by Nicko Guyer",
+    "dependencies": {
+        "pebble-clay": "^1.0.0"
+    },
+    "keywords": [],
+    "name": "engineering-dta",
+    "pebble": {
+        "capabilities": [
+            "location",
+            "configurable"
+        ],
+        "displayName": "Engineering-DigitTimeAdded",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "TEMPERATURE",
+            "SHOW_NUMBERS",
+            "SHOW_SECOND_HAND",
+            "SHOW_DATE",
+            "SHOW_TEMPERATURE",
+            "COLOR_BACKGROUND",
+            "COLOR_LABEL",
+            "COLOR_HOUR_MARKS",
+            "COLOR_MINUTE_MARKS",
+            "COLOR_HOUR_HAND",
+            "COLOR_MINUTE_HAND",
+            "COLOR_SECOND_HAND",
+            "SHOW_DIGITTIME",
+            "SHOW_BATTERY",
+            "COLOR_DIGITTIME",
+            "COLOR_DATE",
+            "COLOR_TEMPERATURE",
+            "COLOR_BATTERY"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk"
+        ],
+        "uuid": "76501904-3410-480c-a6b3-e26317420b71",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
